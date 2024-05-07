@@ -28,11 +28,11 @@ function App() {
         <Routes>
           {!signedIn ? (
               <Route path="/" element={<SignIn />} />
-          ) :<></>}
-           <Route path="/" element={<HomeFirst />}></Route>
+          ) :<> <Route path="/" element={<HomeFirst />}></Route>
           <Route path="SearchResults" element={<SearchResults />} />
           <Route path="ImageSearchResults" element={<ImageSearchResults />} />
-          <Route path="UploadItems" element={<UploadingItems />} />
+          <Route path="UploadItems" element={<UploadingItems />} /></>}
+          
         </Routes>
       </BrowserRouter>
     </searchImage.Provider>

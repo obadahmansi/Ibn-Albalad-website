@@ -15,7 +15,7 @@ function SearchResults() {
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/category/${location.state.value}`)
     .then((res) => res.json())
-    .then(data => (setRecords(data)));
+    .then(data => (setRecords(data) ));
   }, []);
   return (
     <div>

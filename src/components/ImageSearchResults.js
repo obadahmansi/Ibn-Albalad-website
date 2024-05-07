@@ -3,11 +3,14 @@ import ShopItem from "./ShopItem";
 import SubHeader from "./SubHeader";
 import { useEffect, useState } from "react";
 import gpu1 from "../asset/images/gpu1.jpeg"
+import { useLocation } from "react-router-dom";
 
 
 function ImageSearchResults() {
 
+  const location = useLocation();
 
+   console.log(location.state.value)
 
   return (
     <div>
@@ -57,7 +60,7 @@ function ImageSearchResults() {
 
         {/* Here should be the image detection results */}
           <div className="w-full bg-gray-100 rounded-xl p-1 flex justify-between "> 
-          <div className="flex text-3xl gap-5"> <img className="p-5 rounded-xl max-w-xs" src={gpu1}/>
+          <div className="flex text-3xl gap-5"> <img className="p-5 rounded-xl max-w-xs" src={URL.createObjectURL(location.state.value)}/>
           <div className="flex flex-col justify-between font-semibold">
             <div>Search Results for ...</div>
             <div>Showing 200000+ product for the item</div>

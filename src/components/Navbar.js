@@ -14,6 +14,7 @@ const Navbar = () => {
  
   const navigate = useNavigate();
   const [imageFile, setImageFile] = useState(null);
+  const [searchText , setSearchText] = useState();
   var x ;
   
    async function handleImageFile(e)  {
@@ -33,19 +34,22 @@ const Navbar = () => {
        console.error("Error adding document: ", e);
      }
  
-    navigate("/ImageSearchResults");
+    navigate("/ImageSearchResults" , {state : { value : e.target.files[0]}});
   }
 
-  async function uploadingHandler(e){
-    e.preventDefault();
 
-    
+
+  function textHandler(e){
+
+    setSearchText(e.target.value)
+      console.log(e.target.value)
   }
-
   function uploadHandler(){
 
     navigate("/UploadItems")
   }
+
+
   return (
     <header className=" w-full  p-6 text-xl text-rgblue font-semibold">
       <div className="flex justify-between items-center">
@@ -58,8 +62,14 @@ const Navbar = () => {
         <input
           className="rounded-full w-2/4 h-11 border-2 border-drkblue placeholder:pl-3"
           placeholder="Search..."
-        
-         
+          onChange={textHandler}
+          value={searchText}
+          onKeyDown={(e)=>{
+            if(e.key == "Enter" && searchText != "") {
+              navigate("/")
+              navigate("/SearchResults" , { state: { value: searchText } } )
+            }
+          }}
         />
         <a className="cursor-pointer">
           <label htmlFor="image-input">

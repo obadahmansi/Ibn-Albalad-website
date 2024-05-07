@@ -1,4 +1,4 @@
-import logo from "../asset/images/logo.svg";
+import logo from "../asset/svg/logo_white.svg";
 import backgroundlayer1 from "../asset/images/backgroundlayer1.png";
 import Section from "./Section";
 
