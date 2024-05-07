@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Icons" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#b7afac;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st1{fill:none;stroke:#b7afac;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3;}
+	.st2{fill:none;stroke:#b7afac;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;}
+</style>
+<path class="st0" d="M19.7,26.8c-0.9-0.9-1.1-2.2-0.7-3.3l-3.3-3.3c-1.6-1.6-1.5-4.4,0.3-6.2l0,0l5,5" fill="#b7afac"/>
+<path class="st0" d="M12.7,26.3c0.6,0.7,1.3,1.3,2.1,1.7c0.7,0.4,1.2,1.2,1.2,2v0" fill="#b7afac"/>
+<path class="st0" d="M18,24H8c-1.1,0-2-0.9-2-2V5c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2v13" fill="#b7afac"/>
+<line class="st0" x1="10" y1="3" x2="10" y2="24" fill="#b7afac"/>
+<line class="st0" x1="16" y1="6" x2="16" y2="10" fill="#b7afac"/>
+<path class="st0" d="M25,30v-9.5c0-3.3-2-6.2-5-7.4" fill="#b7afac"/>
+<rect x="-144" y="-216" class="st3" width="536" height="680" fill="#b7afac"/>
+</svg>
