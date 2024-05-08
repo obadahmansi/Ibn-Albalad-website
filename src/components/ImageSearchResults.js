@@ -5,8 +5,13 @@ import { useEffect, useState } from "react";
 import gpu1 from "../asset/images/gpu1.jpeg"
 import { useLocation } from "react-router-dom";
 
-
 function ImageSearchResults() {
+
+
+// useEffect(() => {
+//   authorize().then(uploadFile).catch("error",console.error()); 
+
+// }, []);
 
   const location = useLocation();
 

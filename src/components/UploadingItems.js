@@ -5,7 +5,6 @@ import { useDropzone } from "react-dropzone";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import question from "../asset/images/question.png";
 const UploadingItems = () => {
   const [productName, setProductName] = useState();
   const [imageName, setImageName] = useState();
